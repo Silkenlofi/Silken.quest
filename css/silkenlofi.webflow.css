@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Days;
+  src: url('../fonts/Days.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --white: #f3eadc;
   --black: #292e65;
@@ -986,10 +994,12 @@ body {
   letter-spacing: .5rem;
   text-transform: uppercase;
   font-size: 1vw;
+  line-height: 1.25;
 }
 
 .float-title.blue {
   color: var(--black);
+  line-height: 1.25;
 }
 
 .float-title.bottom {
@@ -1196,10 +1206,19 @@ body {
     height: 35rem;
   }
 
+  .float-title {
+    font-size: 2vw;
+    line-height: 1;
+  }
+
   .youtube {
     border-radius: .5rem;
     height: 20%;
     overflow: hidden;
+  }
+
+  .text-block {
+    font-size: 2vw;
   }
 }
 
@@ -1246,8 +1265,22 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  .block.blue.release, .block.white._40rem {
-    height: 30rem;
+  .block {
+    height: 80vw;
+    padding-top: 14vw;
+    padding-bottom: 14vw;
+  }
+
+  .block.blue.release, .block.blue._40rem {
+    height: 150vw;
+    padding-top: 14vw;
+    padding-bottom: 14vw;
+  }
+
+  .block.white._40rem {
+    height: 130vw;
+    padding-top: 14vw;
+    padding-bottom: 14vw;
   }
 
   .single-marque-div {
@@ -1255,11 +1288,54 @@ body {
   }
 
   .div-block-6 {
-    height: 30rem;
+    height: 150vw;
+  }
+
+  .float-title, .float-title.blue {
+    font-size: 3vw;
+  }
+
+  .float-title.bottom {
+    font-size: 2.5vw;
+  }
+
+  .button-block-33 {
+    border-radius: 2vw;
+    min-height: 12vw;
+    padding: 2vw 4vw;
+  }
+
+  .button-text-33-icon-logo {
+    width: 5vw;
+    height: 5vw;
   }
 
   .button-text-33 {
     font-size: .875rem;
+  }
+
+  .button-text-33-icon-arrow {
+    width: 4vw;
+    height: 4vw;
+    font-size: 4vw;
+  }
+
+  .div-block-9 {
+    grid-column-gap: 4vw;
+    grid-row-gap: 4vw;
+    width: 59vw;
+  }
+
+  .flex-block {
+    padding: 2vw 2vw 4vw;
+  }
+
+  .text-block {
+    font-size: 3vw;
+  }
+
+  .div-block-11 {
+    padding-bottom: 6vw;
   }
 }
 
